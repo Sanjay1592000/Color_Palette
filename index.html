@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="image/color_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Color Palette</title>
 </head>
 <body>
     <div class="container">
+        <header>
+            <img src="image/color_logo.png" alt="logo" srcset="">
+            <h1>Color Palette</h1>
+        </header>
         <div class="subcontainer">
             <div class="colorplate" id="color"></div>
             <div class="colorval" id="colorval1">rgb(0,0,0)</div>
@@ -23,6 +30,9 @@
                 <input type="range" name="green" id="green" value="0" min="0" max="255">
             </div>
         </div>
+        <footer>
+            <p>The background color boasts a hint of mystique with an opacity set at 0.4.</p>
+        </footer>
     </div>
     <script src="script.js"></script>
 </body>

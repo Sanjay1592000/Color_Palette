@@ -1,22 +1,38 @@
 body{
     margin: 0;
-    background: linear-gradient(125deg, red,orange,yellow,green,blue,indigo,violet);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: beige;
+    font-family: 'Pixelify Sans', cursive;
 }
 .container{
     display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+header,footer{
+    display: flex;
+    width: 100%;
+    height: 15%;
     justify-content: center;
     align-items: center;
+    box-shadow: inset 0px 0px 0px 5px rgb(37, 36, 36);
+}
+footer p{
+    margin: 0px 15px;
+}
+header img{
+    width: 100px;
+    height: 100px;
 }
 .subcontainer{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 60%;
 }
 .colorplate{
     width: 200px;
@@ -27,7 +43,7 @@ body{
 .colorval{
     text-align: center;
     padding: 10px 20px;
-    width: 100px;
+    width: 150px;
     height: 20px;
     border-radius: 10px;
     background-color: #ffffff;
@@ -41,13 +57,14 @@ body{
     width: 15rem;
 }
 .color > input[type="range"]::-webkit-slider-runnable-track {
+    box-shadow: 0px 0px 0px 2px black;
     background: #ffffff;
     height: 10px;
 }
 .color > input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none; 
     appearance: none;
-    background: #000000;
+    background: #007092;
     height: 10px;
     width: 4px;
   }

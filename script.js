@@ -38,6 +38,7 @@ function color(){
     let bgcolor = document.getElementById("color");
     let colval = document.getElementById("colorval1");
     bgcolor.style.backgroundColor = `rgb(${redval},${blueval},${greenval})`;
+    document.body.style.backgroundColor = `rgb(${redval},${blueval},${greenval}, 0.4)`;    
     colval.innerHTML = `rgb(${redval},${blueval},${greenval})`;
     hexval();
 }
