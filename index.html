@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="image/color_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Color Palette</title>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -18,16 +21,18 @@
         </header>
         <div class="subcontainer">
             <div class="colorplate" id="color"></div>
-            <div class="colorval" id="colorval1">rgb(0,0,0)</div>
-            <div class="colorval" id="colorval2">#000000</div>
-            <div class="color" >
-                <input type="range" name="red" id="red" value="0" min="0" max="255"> 
-            </div>
-            <div class="color">
-                <input type="range" name="blue" id="blue" value="0" min="0" max="255">
-            </div>
-            <div class="color">
-                <input type="range" name="green" id="green" value="0" min="0" max="255">
+            <div class="collection">
+                <div class="colorval" id="colorval1">rgb(0,0,0)</div>
+                <div class="colorval" id="colorval2">#000000</div>
+                <div class="color">
+                    <input type="range" name="red" id="red" value="0" min="0" max="255">
+                </div>
+                <div class="color">
+                    <input type="range" name="blue" id="blue" value="0" min="0" max="255">
+                </div>
+                <div class="color">
+                    <input type="range" name="green" id="green" value="0" min="0" max="255">
+                </div>
             </div>
         </div>
         <footer>
@@ -36,4 +41,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

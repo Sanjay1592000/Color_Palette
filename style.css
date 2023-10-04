@@ -28,17 +28,24 @@ header img{
 }
 .subcontainer{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     height: 60%;
 }
 .colorplate{
-    width: 175px;
-    height: 175px;
+    width: 30%;
+    height: 80%;
     background-color: #000000;
     box-shadow: -5px 0 0 0 black,5px 0 0 0 black,0 -5px 0 0 black,0 5px 0 0 black;
+}
+.collection{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 .colorval{
     text-align: center;
@@ -67,4 +74,20 @@ header img{
     background: #007092;
     height: 10px;
     width: 4px;
-  }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .subcontainer{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .colorplate{
+        width: 30%;
+        height: 30%;
+    }
+    .collection{
+        width: 100%;
+        height: 60%;
+    }
+}
